@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="solr-solrj-8.5.1">
+    <CLASSES>
+      <root url="jar://F:/package/java/solr/solr-solrj-8.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

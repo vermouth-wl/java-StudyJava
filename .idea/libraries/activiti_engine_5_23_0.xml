@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="activiti-engine-5.23.0">
+    <CLASSES>
+      <root url="jar://F:/package/java/ibatis/activiti-engine-5.23.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
