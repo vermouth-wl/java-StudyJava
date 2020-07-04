@@ -30,7 +30,7 @@ public class TestCollections {
 
         List<String> stringList  = Arrays.asList("blue", "green", "red");
         System.out.println("(3) index: " + Collections.binarySearch(stringList, "red"));
-        System.out.println("(4) index: " +Collections.binarySearch(stringList, "yellow"));
+        System.out.println("(4) index: " + Collections.binarySearch(stringList, "yellow"));
 
 
         // 使用Collections的reverse()方法将线性表中的元素以逆序排列显示
