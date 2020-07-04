@@ -34,12 +34,12 @@ public class TestCollection {
 
         ArrayList<String> c1 = (ArrayList<String>) collection1.clone();
         c1.addAll(collection2);
-        System.out.println("\n城市在集合1或者集成2： ");
+        System.out.println("\n城市在集合1、集合2的所有元素是： ");
         System.out.println(c1);
 
         c1 = (ArrayList<String>) collection1.clone();
         c1.retainAll(collection2);
-        System.out.println("\n城市在集合1或者集成2： ");
+        System.out.println("\n城市在集合1或者集合2同时存在的元素是： ");
         System.out.println(c1);
 
         c1 = (ArrayList<String>)collection1.clone();
