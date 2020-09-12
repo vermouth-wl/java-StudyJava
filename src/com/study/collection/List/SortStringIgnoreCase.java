@@ -1,9 +1,6 @@
 package com.study.collection.List;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -22,11 +19,7 @@ public class SortStringIgnoreCase {
 
         // foreach输出
         for (String s : list) {
-            // System.out.print(s + " ");
+            System.out.print(s + " ");
         }
-
-        List<String> l = Arrays.asList("red", "green", "blue");
-        Collections.sort(l);
-        System.out.println(l);
     }
 }

@@ -57,5 +57,39 @@ public class TestCollections {
         List<Integer> integerList2 = Arrays.asList(2, 4, 6, 8);
         Collections.copy(integerList1, integerList2);
         System.out.println("Collections的copy()方法复制后的结果为: " + integerList1);
+
+
+        // 使用nCopy()方法创建包含指定对象的n个副本的不可变线性表
+        List<GregorianCalendar> gregorianCalendars = Collections.nCopies(
+                5, new GregorianCalendar(2005, 0, 1)
+        );
+        gregorianCalendars.forEach(e -> System.out.println("Collections的nCopy()方法创建的不可变线性表为: " + e));
+
+
+        // 使用fill方法将列表中的元素全部替换
+        List<String> stringList1 = Arrays.asList("red", "green", "blue");
+        Collections.fill(stringList1, "black");
+        System.out.println("Collections的fill()将列表中的元素全部替换结果为: " + stringList1);
+
+
+        // 使用max()、min()方法找出集合中的最大、最小元素
+        List<String> stringList2 = Arrays.asList("陆户习习门", "税款居然是零诶", "其实我在这儿过得也不快乐");
+        System.out.println("Collections中的max()方法查找到的最大元素是: " + Collections.max(stringList2));  // Comparable
+        System.out.println("Collections中的min()方法查找到的最小元素是: " + Collections.min(stringList2,
+                Comparator.comparing(String::length)));  // Comparator
+
+
+        // 使用disjoint()方法比较两个集合中有无共同元素，没有返回true，有返回false
+        List<String> stringList3 = Arrays.asList("苦艾酒", "柯南");
+        List<String> stringList4 = Arrays.asList("毛利兰", "柯南");
+        List<String> stringList5 = Arrays.asList("灰原哀", "琴酒");
+        System.out.println("Collections中的disjoint()方法比较结果为: " + Collections.disjoint(stringList3, stringList4));   // false
+        System.out.println("Collections中的disjoint()方法比较结果为: " + Collections.disjoint(stringList3, stringList5));   // true
+        System.out.println("Collections中的disjoint()方法比较结果为: " + Collections.disjoint(stringList4, stringList5));   // true
+
+
+        // 使用frequency()方法查找集合中某元素出现的次数
+        List<String> stringList6 = Arrays.asList("苦艾酒", "琴酒", "雪莉酒", "伏特加酒", "波本酒", "威士忌酒", "基尔酒", "苦艾酒", "雪莉酒");
+        System.out.println("Collections的frequency()方法查找某元素出现次数结果为: " + Collections.frequency(stringList6, "苦艾酒"));  // 2
     }
 }

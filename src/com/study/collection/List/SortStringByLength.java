@@ -23,5 +23,6 @@ public class SortStringByLength {
         for (String s : cities) {
             System.out.print(s + " ");
         }
+        System.out.println();
     }
 }
